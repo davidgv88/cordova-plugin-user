@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-user" version="0.0.1">
+    <name>User</name>
+    <description>Cordova User Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,device,user</keywords>
+    
+    <platform name="windows">
+        <config-file target="package.appxmanifest" parent="/Package/Capabilities" versions=">8.1.0">
+            <uap:Capability Name="userAccountInformation" />
+        </config-file>
+    </platform>
+</plugin>
